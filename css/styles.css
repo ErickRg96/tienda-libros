@@ -1,0 +1,193 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Lato', sans-serif; */
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background: #E1E2E4;
+}
+
+.container{
+   width: 65%;
+   max-width: 1000px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: repeat(3,auto);
+   grid-template-areas: "header"
+                        "content"
+                        "footer";
+}
+
+.container .header{
+   grid-area: header;
+   height: 100px;
+}
+
+.header{
+   width: 100%;
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: no-wrap;
+}
+
+.search-bar input{
+   border: none;
+   font-family: 'Roboto', sans-serif;
+   font-size: 13px;
+   font-weight: 500;
+   background: #E1E2E4;
+   color: #7D7D7D;
+
+}
+
+.button{
+   font-family: 'Roboto', sans-serif;
+   font-size: 13px;
+   padding: 8px 0px;
+   margin: 0 6px;
+   color: #fff;
+   background: blue;
+   border-radius: 35px;
+   display: inline-block;
+   width: 125px;
+   text-align: center;
+
+}
+
+.buttons-header .iniciar-sesion{
+   background: #3686E6;
+}
+
+.buttons-header .registrarse{
+   background: #3ECACE;
+   margin-right: 0;
+}
+
+.container .content{
+   background: #fff;
+   grid-area: content;
+}
+
+.content .slider{
+   height: 250px;
+   border: 3px solid red;
+}
+
+.content h2{
+   font-family: 'Lato', sans-serif;
+   font-size: 22px;
+   color: #00204A;
+   text-align: center;
+}
+
+.content .sections{
+   padding: 40px 80px;
+}
+
+.sections .categorias{
+   padding: 35px 0;
+   display: grid;
+   grid-gap:20px;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+
+.categorias .negocios{
+   background: #3686E6;
+}
+
+.categorias .autoayuda{
+   background: #FDA403;
+}
+
+.categorias .ciencia-ficcion{
+   background: #B4B4B4;
+}
+
+.categorias .fantasia{
+   background: #D61010;
+}
+
+.categorias .misterio{
+   background: #1DD28E;
+}
+
+.categorias .ciencia{
+   background: #008209;
+}
+
+.categorias .salud{
+   background: #A036E6;
+}
+
+.categorias .literatura{
+   background: #A036E6;
+}
+
+.categorias .historia{
+   background: #14406D;
+}
+
+.categorias .suspenso{
+   background: #B2BB38;
+}
+
+.sections .mas-vendidos{
+   padding: 35px 0;
+   display: grid;
+   grid-gap:20px;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+}
+
+.portada-libro{
+   border: 3px solid red;
+   text-align: center;
+}
+
+.portada-libro h3{
+   font-family: 'Lato', sans-serif; 
+   font-size: 12px;
+   font-weight: bold;
+}
+
+.portada-libro .autor{
+   font-family: 'Lato', sans-serif; 
+   font-style: italic;
+   font-size: 11px;
+   color: #7D7D7D;
+}
+
+.portada-libro .calificacion{
+   color: #FFDD00;
+   font-size: 12px;
+}
+
+
+.container footer{
+   background: #00204A;
+   color: #fff;
+   grid-area: footer;
+}
+
+footer p{
+   font-family: 'Roboto', sans-serif;
+   font-size: 13px;
+   font-weight: bold;
+}
+
+footer li{
+   list-style: none;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 13px;
+   color: #3ACACE;
+}
+
